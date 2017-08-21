@@ -15,12 +15,12 @@ args = parser.parse_args()
 
 ## Set environment ##
 if args.warning:
-    alert_day_warning = args.warning
+    alert_day_warning = int(args.warning)
 else:
     alert_day_warning = 45
 
 if args.critical:
-    alert_day_critical = args.critical
+    alert_day_critical = int(args.critical)
 else:
     alert_day_critical = 55
 
